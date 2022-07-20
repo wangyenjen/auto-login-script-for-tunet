@@ -1,5 +1,5 @@
 CHECK_TIME_INTERVAL=1 #min
-AUTH_CMD="./auth-thu.macos.x86_64"
+AUTH_CMD="./auth-thu.linux.x86_64"
 
 read -p "Username: " username
 read -s -p "Password: " password
