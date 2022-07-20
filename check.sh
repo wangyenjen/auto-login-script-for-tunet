@@ -6,8 +6,8 @@ read -s -p "Password: " password
 
 while true
 do
-  ping baidu.com -c2
-  if [ $? -ne 0 ];
+  ping baidu.com -c1
+  if [ $? -eq 2 ];
   then
     $AUTH_CMD deauth
     $AUTH_CMD deauth --ipv6
