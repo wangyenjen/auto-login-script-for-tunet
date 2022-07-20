@@ -1,4 +1,4 @@
-CHECK_TIME_INTERVAL=1 #min
+CHECK_TIME_INTERVAL_SEC=2 #default every 2 seconds to check.
 AUTH_CMD="./auth-thu.linux.x86_64"
 
 read -p "Username: " username
@@ -14,5 +14,5 @@ do
     $AUTH_CMD -u $username -p $password auth
     $AUTH_CMD -u $username -p $password auth --ipv6
   fi
-  sleep $((CHECK_TIME_INTERVAL * 60))
+  sleep $CHECK_TIME_INTERVAL_SEC
 done
