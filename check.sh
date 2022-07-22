@@ -14,9 +14,9 @@ do
   else
     ping ipv6.tsinghua.edu.cn -c1
     if [ $? -ne 0 ];
+    then
       $AUTH_CMD deauth --ipv6
       $AUTH_CMD -u $username -p $password auth --ipv6
-    then
     fi
   fi
   sleep $CHECK_TIME_INTERVAL_SEC
