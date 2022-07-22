@@ -12,7 +12,7 @@ do
     $AUTH_CMD deauth
     $AUTH_CMD -u $username -p $password auth
   else
-    ping ipv6.baidu.com -c1
+    ping ipv6.tsinghua.edu.cn -c1
     if [ $? -ne 0 ];
       $AUTH_CMD deauth --ipv6
       $AUTH_CMD -u $username -p $password auth --ipv6
